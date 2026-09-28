@@ -1,13 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.example.LoginPageControler"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="568.0" fitWidth="423.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/fdsfsdf_900x1200.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="341.0" opacity="0.75" text="We’re" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="372.0" opacity="0.75" prefHeight="56.0" prefWidth="346.0" text="happy to see" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="404.0" opacity="0.75" prefHeight="56.0" prefWidth="346.0" text="you again!" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="492.0" prefHeight="19.0" prefWidth="346.0" text="Sign in to your account and continue your journey with us." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="507.0" prefHeight="18.0" prefWidth="346.0" text="Enter your email and password below to get started." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="479.0" prefHeight="19.0" prefWidth="346.0" text="Please log in to your account using your email and password." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="500.0" layoutY="170.0" text="Welcome Back!">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="542.0" layoutY="218.0" text="Please log in to your account using">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="573.0" layoutY="245.0" text="below to get started.">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameText" layoutX="482.0" layoutY="299.0" prefHeight="42.0" prefWidth="297.0" promptText="Username" />
+      <TextField fx:id="passwordText" layoutX="482.0" layoutY="360.0" prefHeight="42.0" prefWidth="297.0" promptText="Password" />
+      <ImageView fitHeight="193.0" fitWidth="190.0" layoutX="530.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/welcome_to.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="488.0" layoutY="232.0" text="Please log in to your account using your email and password.">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="588.0" layoutY="529.0" text="Develop By Sadeesha" textFill="#898585">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginBtn" layoutX="679.0" layoutY="420.0" mnemonicParsing="false" opacity="0.68" prefHeight="34.0" prefWidth="101.0" style="-fx-background-color: #171717;" text="LOG IN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
 </AnchorPane>
