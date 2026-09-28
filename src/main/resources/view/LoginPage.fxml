@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginPageControler">
    <children>
       <ImageView fitHeight="568.0" fitWidth="423.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -55,19 +55,19 @@
             <Font size="11.0" />
          </font>
       </Label>
-      <Label layoutX="573.0" layoutY="245.0" text="below to get started.">
+      <Label layoutX="575.0" layoutY="245.0" text="below to get started.">
          <font>
             <Font size="11.0" />
          </font>
       </Label>
-      <TextField fx:id="usernameText" layoutX="482.0" layoutY="299.0" prefHeight="42.0" prefWidth="297.0" promptText="Username" />
-      <TextField fx:id="passwordText" layoutX="482.0" layoutY="360.0" prefHeight="42.0" prefWidth="297.0" promptText="Password" />
+      <TextField fx:id="usernameText" focusTraversable="false" layoutX="482.0" layoutY="299.0" prefHeight="42.0" prefWidth="297.0" promptText="Username" />
+      <TextField fx:id="passwordText" focusTraversable="false" layoutX="482.0" layoutY="360.0" prefHeight="42.0" prefWidth="297.0" promptText="Password" />
       <ImageView fitHeight="193.0" fitWidth="190.0" layoutX="530.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/welcome_to.png" />
          </image>
       </ImageView>
-      <Label layoutX="488.0" layoutY="232.0" text="Please log in to your account using your email and password.">
+      <Label layoutX="483.0" layoutY="232.0" text="Please log in to your account using your email and password.">
          <font>
             <Font size="11.0" />
          </font>
@@ -77,10 +77,15 @@
             <Font size="11.0" />
          </font>
       </Label>
-      <Button fx:id="loginBtn" layoutX="679.0" layoutY="420.0" mnemonicParsing="false" opacity="0.68" prefHeight="34.0" prefWidth="101.0" style="-fx-background-color: #171717;" text="LOG IN" textFill="WHITE">
+      <Button fx:id="loginBtn" alignment="CENTER" layoutX="679.0" layoutY="420.0" mnemonicParsing="false" onAction="#LoginOnActionBtn" opacity="0.68" prefHeight="34.0" prefWidth="101.0" style="-fx-background-color: #171717;" text="LOG IN" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
+      <Label layoutX="809.0" layoutY="6.0" onMouseClicked="#CloseBtnText" opacity="0.5" text="X">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
