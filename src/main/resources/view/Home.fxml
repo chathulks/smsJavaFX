@@ -1,14 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Home.HomeControlerPage"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane maxHeight="679.2" maxWidth="1424.0" prefHeight="679.2" prefWidth="1424.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.HomeControlerPage">
+   <children>
+      <Pane layoutX="37.0" layoutY="72.0" prefHeight="186.0" prefWidth="320.0" styleClass="my-card-dashboard" stylesheets="@../css/style.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <children>
+            <ImageView blendMode="LIGHTEN" fitHeight="277.0" fitWidth="443.0" layoutX="-28.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true" rotate="360.0">
+               <image>
+                  <Image url="@../images/Flowing%20Orange%20Ribbon%20Waves.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="26.0" layoutY="82.0" text="Total Books" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="109.0" text="250" textFill="#cccccc">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="41.0" layoutX="26.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/book.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="26.0" layoutY="139.0" text="Increased by 90%" textFill="#eaeaea">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="381.0" layoutY="72.0" prefHeight="186.0" prefWidth="320.0" styleClass="my-card-dashboard" stylesheets="@../css/style.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <children>
+            <ImageView blendMode="LIGHTEN" fitHeight="249.0" fitWidth="434.0" layoutX="-19.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true" rotate="360.0">
+               <image>
+                  <Image url="@../images/Layered%20Purple%20Wave%20Abstract.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="29.0" layoutY="81.0" text="Total Member" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="108.0" text="250" textFill="#cccccc">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="41.0" layoutX="29.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/address-book.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="29.0" layoutY="138.0" text="Increased by 90%" textFill="#eaeaea">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="724.0" layoutY="72.0" prefHeight="186.0" prefWidth="320.0" styleClass="my-card-dashboard" stylesheets="@../css/style.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <children>
+            <ImageView blendMode="LIGHTEN" fitHeight="249.0" fitWidth="434.0" layoutX="-19.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true" rotate="360.0">
+               <image>
+                  <Image url="@../images/Layered%20Emerald%20Ribbon%20Waves.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="28.0" layoutY="81.0" text="Borrowed Books" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="108.0" text="250" textFill="#cccccc">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="41.0" layoutX="28.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/document-circle-wrong.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="28.0" layoutY="138.0" text="Increased by 90%" textFill="#eaeaea">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="1068.0" layoutY="72.0" prefHeight="186.0" prefWidth="320.0" styleClass="my-card-dashboard" stylesheets="@../css/style.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <children>
+            <ImageView blendMode="LIGHTEN" fitHeight="249.0" fitWidth="434.0" layoutX="-19.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true" rotate="360.0">
+               <image>
+                  <Image url="@../images/Layered%20Rose%20Pink%20Waves.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="29.0" layoutY="82.0" text="Overdue Books" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="109.0" text="250" textFill="#cccccc">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="41.0" layoutX="29.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/time-past.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="29.0" layoutY="139.0" text="Increased by 90%" textFill="#eaeaea">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="37.0" layoutY="24.0" text="Dashboard">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

@@ -1,14 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Member.MemberControlerPage"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="679.2" prefWidth="1424.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Member.MemberControlerPage">
+   <children>
+      <Label layoutX="45.0" layoutY="28.0" text="Add Your Member">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="44.0" layoutY="107.0" prefHeight="34.0" prefWidth="300.0" promptText="M001" />
+      <Label layoutX="45.0" layoutY="82.0" text="Member ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="369.0" layoutY="107.0" prefHeight="34.0" prefWidth="300.0" promptText="Sadeesha Chathumal" />
+      <Label layoutX="370.0" layoutY="82.0" text="Full Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="691.0" layoutY="107.0" prefHeight="34.0" prefWidth="300.0" promptText="chathumals05@gmail.com" />
+      <Label layoutX="692.0" layoutY="82.0" text="Emaile">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="44.0" layoutY="177.0" prefHeight="34.0" prefWidth="300.0" promptText="+94 704 591 135" />
+      <Label layoutX="45.0" layoutY="152.0" text="Mobile">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="369.0" layoutY="177.0" prefHeight="34.0" prefWidth="622.0" promptText="Minikandala / Pelenda / Baduraliya 291" />
+      <Label layoutX="370.0" layoutY="152.0" text="Address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="1004.0" layoutY="177.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="122.0" styleClass="my-add-button" stylesheets="@../css/style.css" text="Add Member" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
 </AnchorPane>

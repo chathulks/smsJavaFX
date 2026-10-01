@@ -9,3 +9,14 @@
     -fx-background-color:#222229;
     -fx-background-radius: 0px 30px 30px 0px;
 }
+.my-card-dashboard{
+    -fx-background-color:#222229;
+    -fx-background-radius:20px 20px 20px 20px;
+}
+.my-add-button{
+    -fx-background-color:#410073;
+    -fx-fill-color:#ffffff;
+}
+.my-add-button:hover{
+    -fx-background-color:#4d0087;
+}
