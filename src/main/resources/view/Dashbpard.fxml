@@ -1,14 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="DashBoard.DashBoardControler"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="748.0" prefWidth="1477.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashBoard.DashBoardControler">
+   <children>
+      <BorderPane layoutX="-3.0" layoutY="-3.0" prefHeight="759.0" prefWidth="1484.0">
+         <left>
+            <Pane prefHeight="679.0" prefWidth="60.0" styleClass="nav-bg-color" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutY="121.0" prefHeight="433.0" prefWidth="60.0">
+                     <children>
+                        <Button fx:id="homeBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#homeOnActionBtn" prefHeight="61.0" prefWidth="70.0" styleClass="my-button" stylesheets="@../css/style.css" text="Home" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/house-chimney.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="bookBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#bookOnActionBtn" prefHeight="61.0" prefWidth="70.0" styleClass="my-button" stylesheets="@../css/style.css" text="Book" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/book.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="memberBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#memberOnActionBtn" prefHeight="61.0" prefWidth="70.0" styleClass="my-button" stylesheets="@../css/style.css" text="Member" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/address-book.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="issueseBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#issueseOnActionBtn" prefHeight="61.0" prefWidth="70.0" styleClass="my-button" stylesheets="@../css/style.css" text="Issuese" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/document-circle-wrong.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="returnBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#returnOnActionBtn" prefHeight="61.0" prefWidth="70.0" styleClass="my-button" stylesheets="@../css/style.css" text="Return" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/undo.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="historyBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#historyOnActionBtn" prefHeight="61.0" prefWidth="70.0" styleClass="my-button" stylesheets="@../css/style.css" text="History" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/time-past.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="logoutBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#logoutOnActionBtn" prefHeight="61.0" prefWidth="70.0" styleClass="my-button" stylesheets="@../css/style.css" text="Log Out" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/power.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </left>
+         <top>
+            <Pane prefHeight="40.0" prefWidth="1484.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="closeText" layoutX="1460.0" layoutY="8.0" onMouseClicked="#closeTextBtn" text="X" textFill="#4b4a4a">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <Pane prefHeight="40.0" prefWidth="1484.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <AnchorPane fx:id="mainAnchorPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
 </AnchorPane>

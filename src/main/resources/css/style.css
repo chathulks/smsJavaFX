@@ -1,0 +1,11 @@
+.my-button{
+    -fx-background-color:#222229;
+    -fx-fill-color:#ffffff;
+}
+.my-button:hover{
+    -fx-background-color:#007a85;
+}
+.nav-bg-color{
+    -fx-background-color:#222229;
+    -fx-background-radius: 0px 30px 30px 0px;
+}
