@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -29,6 +30,9 @@
                                  </image>
                               </ImageView>
                            </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Button>
                         <Button fx:id="bookBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#bookOnActionBtn" prefHeight="61.0" prefWidth="70.0" styleClass="my-button" stylesheets="@../css/style.css" text="Book" textFill="WHITE">
                            <font>
@@ -41,6 +45,9 @@
                                  </image>
                               </ImageView>
                            </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Button>
                         <Button fx:id="memberBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#memberOnActionBtn" prefHeight="61.0" prefWidth="70.0" styleClass="my-button" stylesheets="@../css/style.css" text="Member" textFill="WHITE">
                            <font>
@@ -53,6 +60,9 @@
                                  </image>
                               </ImageView>
                            </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Button>
                         <Button fx:id="issueseBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#issueseOnActionBtn" prefHeight="61.0" prefWidth="70.0" styleClass="my-button" stylesheets="@../css/style.css" text="Issuese" textFill="WHITE">
                            <font>
@@ -65,6 +75,9 @@
                                  </image>
                               </ImageView>
                            </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Button>
                         <Button fx:id="returnBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#returnOnActionBtn" prefHeight="61.0" prefWidth="70.0" styleClass="my-button" stylesheets="@../css/style.css" text="Return" textFill="WHITE">
                            <font>
@@ -77,6 +90,9 @@
                                  </image>
                               </ImageView>
                            </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Button>
                         <Button fx:id="historyBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#historyOnActionBtn" prefHeight="61.0" prefWidth="70.0" styleClass="my-button" stylesheets="@../css/style.css" text="History" textFill="WHITE">
                            <font>
@@ -89,6 +105,9 @@
                                  </image>
                               </ImageView>
                            </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Button>
                         <Button fx:id="logoutBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#logoutOnActionBtn" prefHeight="61.0" prefWidth="70.0" styleClass="my-button" stylesheets="@../css/style.css" text="Log Out" textFill="WHITE">
                            <font>
@@ -101,6 +120,9 @@
                                  </image>
                               </ImageView>
                            </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Button>
                      </children>
                   </VBox>
