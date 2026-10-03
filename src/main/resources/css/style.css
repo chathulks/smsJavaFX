@@ -24,19 +24,19 @@
 }
 .my-text-input-field{
     -fx-background-color:transparent;
-    -fx-border-color:#050029;
+    -fx-border-color:#a8a8a8;
     -fx-border-width:1px 1px 1px 1px;
     -fx-border-radius: 10px 10px 10px 10px;
 }
 .my-table{
     -fx-background-color: transparent;
-    -fx-border-color: #050029;
+    -fx-border-color: #a8a8a8;
     -fx-border-width: 1px;
     -fx-border-radius: 8px;
     -fx-background-radius: 8px;
 }
 .my-table .column-header-background{
-    -fx-background-color: #050029;
+    -fx-background-color: #00ff04;
     -fx-background-radius: 8px 8px 0 0;
 }
 .my-table .column-header {
@@ -46,7 +46,7 @@
     -fx-padding:0px 0px 0px 20px;
 }
 .my-table .column-header .label {
-    -fx-text-fill: white;
+    -fx-text-fill: #424242;
     -fx-font-size: 12px;
     -fx-font-weight: bold;
     -fx-alignment: CENTER-LEFT;
@@ -87,7 +87,7 @@
 .date-picker {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
-    -fx-border-color:#050029;
+    -fx-border-color:#a8a8a8;
     -fx-border-width:1px 1px 1px 1px;
     -fx-border-radius: 10px 10px 10px 10px;
 }
@@ -104,4 +104,18 @@
 
 .date-picker .arrow-button .arrow {
     -fx-background-color: #555555;
+}
+
+.my-text-input-search{
+    -fx-background-color:transparent;
+    -fx-border-color:#a8a8a8;
+    -fx-border-width:0px 0px 1px 0px;
+    -fx-border-radius: 0px 0px 0px 0px;
+    -fx-padding:0px 0px 0px 30px;
+}
+
+.my-card{
+    -fx-background-color:white;
+    -fx-effect:dropshadow(gaussian, rgba(0, 0, 0, 0.20), 15, 0.1, 0, 4);
+    -fx-background-radius:20px
 }

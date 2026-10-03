@@ -7,26 +7,44 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="679.2" prefWidth="1424.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Member.MemberControlerPage">
    <children>
-      <Label layoutX="45.0" layoutY="28.0" text="Add Your Member">
+      <Pane layoutX="54.0" layoutY="72.0" prefHeight="191.0" prefWidth="1316.0" styleClass="my-card" stylesheets="@../css/style.css" />
+      <Pane layoutX="55.0" layoutY="302.0" prefHeight="328.0" prefWidth="1316.0" styleClass="my-card" stylesheets="@../css/style.css" />
+      <Label layoutX="55.0" layoutY="20.0" text="Add Your Member">
          <font>
-            <Font size="18.0" />
+            <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="44.0" layoutY="107.0" prefHeight="34.0" prefWidth="300.0" promptText="M001" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
-      <Label layoutX="45.0" layoutY="82.0" text="Member ID" />
-      <TextField layoutX="369.0" layoutY="107.0" prefHeight="34.0" prefWidth="300.0" promptText="Sadeesha Chathumal" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
-      <Label layoutX="370.0" layoutY="82.0" text="Full Name" />
-      <TextField layoutX="691.0" layoutY="107.0" prefHeight="34.0" prefWidth="300.0" promptText="chathumals05@gmail.com" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
-      <Label layoutX="692.0" layoutY="82.0" text="Email" />
-      <TextField layoutX="44.0" layoutY="177.0" prefHeight="34.0" prefWidth="300.0" promptText="+94 704 591 135" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
-      <Label layoutX="45.0" layoutY="152.0" text="Mobile" />
-      <TextField layoutX="369.0" layoutY="177.0" prefHeight="34.0" prefWidth="622.0" promptText="Minikandala / Pelenda / Baduraliya 291" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
-      <Label layoutX="370.0" layoutY="152.0" text="Address" />
-      <Button layoutX="1259.0" layoutY="177.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="122.0" styleClass="my-add-button" stylesheets="@../css/style.css" text="Add Member" textFill="WHITE">
+      <TextField layoutX="88.0" layoutY="124.0" prefHeight="34.0" prefWidth="300.0" promptText="M001" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <Label layoutX="89.0" layoutY="99.0" text="Member ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField layoutX="413.0" layoutY="124.0" prefHeight="34.0" prefWidth="300.0" promptText="Sadeesha Chathumal" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <Label layoutX="414.0" layoutY="99.0" text="Full Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField layoutX="735.0" layoutY="124.0" prefHeight="34.0" prefWidth="300.0" promptText="chathumals05@gmail.com" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <Label layoutX="736.0" layoutY="99.0" text="Email">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField layoutX="88.0" layoutY="194.0" prefHeight="34.0" prefWidth="300.0" promptText="+94 704 591 135" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <Label layoutX="89.0" layoutY="169.0" text="Mobile">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField layoutX="413.0" layoutY="194.0" prefHeight="34.0" prefWidth="622.0" promptText="Minikandala / Pelenda / Baduraliya 291" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <Label layoutX="414.0" layoutY="169.0" text="Address">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button layoutX="1212.0" layoutY="194.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="122.0" styleClass="my-add-button" stylesheets="@../css/style.css" text="Add Member" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -34,7 +52,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <TableView fx:id="member_table" layoutX="44.0" layoutY="246.0" prefHeight="384.0" prefWidth="1338.0" styleClass="my-table" stylesheets="@../css/style.css">
+      <TableView fx:id="member_table" layoutX="88.0" layoutY="338.0" prefHeight="258.0" prefWidth="1246.0" styleClass="my-table" stylesheets="@../css/style.css">
         <columns>
           <TableColumn prefWidth="75.0" text="Member ID" />
           <TableColumn prefWidth="75.0" text="Full Name" />
