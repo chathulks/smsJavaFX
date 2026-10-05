@@ -12,9 +12,15 @@
 
 <AnchorPane prefHeight="679.2" prefWidth="1424.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Member.MemberControlerPage">
    <children>
-      <Pane layoutX="54.0" layoutY="72.0" prefHeight="191.0" prefWidth="1316.0" styleClass="my-card" stylesheets="@../css/style.css" />
-      <Pane layoutX="55.0" layoutY="302.0" prefHeight="328.0" prefWidth="1316.0" styleClass="my-card" stylesheets="@../css/style.css" />
-      <Label layoutX="55.0" layoutY="20.0" text="Add Your Member">
+      <Pane layoutX="65.0" layoutY="264.0" prefHeight="354.0" prefWidth="1290.0" styleClass="my-card" stylesheets="@../css/style.css">
+         <children>
+            <Label layoutX="23.0" layoutY="31.0" text="All Member Details">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Label layoutX="65.0" layoutY="36.0" text="Add Your Member">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>

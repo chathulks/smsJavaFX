@@ -15,8 +15,14 @@
 
 <AnchorPane prefHeight="679.2" prefWidth="1424.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Issuese.IssueseControlerPage">
    <children>
-      <Pane layoutX="42.0" layoutY="70.0" prefHeight="183.0" prefWidth="1338.0" styleClass="my-card" stylesheets="@../css/style.css" />
-      <Pane layoutX="43.0" layoutY="285.0" prefHeight="347.0" prefWidth="1338.0" styleClass="my-card" stylesheets="@../css/style.css" />
+      <Pane layoutX="58.0" layoutY="256.0" prefHeight="359.0" prefWidth="1303.0" styleClass="my-card" stylesheets="@../css/style.css">
+         <children>
+            <Label layoutX="23.0" layoutY="23.0" text="All Book Issuse">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
       <Label layoutX="55.0" layoutY="25.0" text="Your Book Issuse">
          <font>
             <Font name="System Bold" size="24.0" />

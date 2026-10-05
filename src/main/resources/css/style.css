@@ -36,13 +36,13 @@
     -fx-background-radius: 8px;
 }
 .my-table .column-header-background{
-    -fx-background-color: #00ff04;
+    -fx-background-color: #b8b3ff;
     -fx-background-radius: 8px 8px 0 0;
 }
 .my-table .column-header {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
-    -fx-size: 30px;
+    -fx-size: 40px;
     -fx-padding:0px 0px 0px 20px;
 }
 .my-table .column-header .label {
