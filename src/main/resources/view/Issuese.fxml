@@ -28,38 +28,38 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <ComboBox layoutX="79.0" layoutY="124.0" prefHeight="34.0" prefWidth="300.0" promptText="Select" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <ComboBox fx:id="select_member" layoutX="79.0" layoutY="124.0" prefHeight="34.0" prefWidth="300.0" promptText="Select" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
       <Label layoutX="79.0" layoutY="97.0" text="Select Member">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <ComboBox layoutX="399.0" layoutY="124.0" prefHeight="34.0" prefWidth="300.0" promptText="Select" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <ComboBox fx:id="select_book" layoutX="399.0" layoutY="124.0" prefHeight="34.0" prefWidth="300.0" promptText="Select" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
       <Label layoutX="399.0" layoutY="97.0" text="Select Book">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <DatePicker layoutX="720.0" layoutY="124.0" prefHeight="34.0" prefWidth="300.0" promptText="MM / DD / YYYY" styleClass="date-picker" stylesheets="@../css/style.css" />
+      <DatePicker fx:id="issuse_date" layoutX="720.0" layoutY="124.0" prefHeight="34.0" prefWidth="300.0" promptText="MM / DD / YYYY" styleClass="date-picker" stylesheets="@../css/style.css" />
       <Label layoutX="720.0" layoutY="97.0" text="Issuse Date">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <DatePicker layoutX="1039.0" layoutY="124.0" prefHeight="34.0" prefWidth="300.0" promptText="MM / DD / YYYY" styleClass="date-picker" stylesheets="@../css/style.css" />
+      <DatePicker fx:id="due_date" layoutX="1039.0" layoutY="124.0" prefHeight="34.0" prefWidth="300.0" promptText="MM / DD / YYYY" styleClass="date-picker" stylesheets="@../css/style.css" />
       <Label layoutX="1039.0" layoutY="97.0" text="Due Date">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <TextField layoutX="81.0" layoutY="182.0" prefHeight="34.0" prefWidth="939.0" promptText="Searching for details.." styleClass="my-text-input-search" stylesheets="@../css/style.css" />
+      <TextField fx:id="search_text" layoutX="81.0" layoutY="182.0" prefHeight="34.0" prefWidth="939.0" promptText="Searching for details.." styleClass="my-text-input-search" stylesheets="@../css/style.css" />
       
-      <Button layoutX="1177.0" layoutY="182.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="162.0" styleClass="my-add-button" stylesheets="@../css/style.css" text="Issuse Bokk" textFill="WHITE">
+      <Button fx:id="issuse_btn" layoutX="1177.0" layoutY="182.0" mnemonicParsing="false" onAction="#IssuseOnActionBtn" prefHeight="34.0" prefWidth="162.0" styleClass="my-add-button" stylesheets="@../css/style.css" text="Issuse Bokk" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <TableView layoutX="80.0" layoutY="326.0" prefHeight="268.0" prefWidth="1259.0" styleClass="my-table" stylesheets="@../css/style.css">
+      <TableView fx:id="issuse_book_table" layoutX="80.0" layoutY="326.0" prefHeight="268.0" prefWidth="1259.0" styleClass="my-table" stylesheets="@../css/style.css">
         <columns>
           <TableColumn prefWidth="75.0" text="Member" />
           <TableColumn prefWidth="75.0" text="Book" />
