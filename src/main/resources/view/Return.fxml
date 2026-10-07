@@ -21,7 +21,7 @@
          </font>
       </Label>
       <Pane layoutX="55.0" layoutY="275.0" prefHeight="353.0" prefWidth="638.0" styleClass="my-card" stylesheets="@../css/style.css" />
-      <TableView layoutX="76.0" layoutY="345.0" prefHeight="262.0" prefWidth="597.0" styleClass="my-table" stylesheets="@../css/style.css">
+      <TableView fx:id="memberInfo_table" layoutX="76.0" layoutY="345.0" prefHeight="262.0" prefWidth="597.0" styleClass="my-table" stylesheets="@../css/style.css">
          <columns>
             <TableColumn prefWidth="75.0" text="#" />
             <TableColumn prefWidth="75.0" text="Full Name" />
@@ -45,7 +45,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TableView layoutX="21.0" layoutY="73.0" prefHeight="262.0" prefWidth="598.0" styleClass="my-table" stylesheets="@../css/style.css">
+            <TableView fx:id="returnBookDetails_table" layoutX="21.0" layoutY="73.0" prefHeight="262.0" prefWidth="598.0" styleClass="my-table" stylesheets="@../css/style.css">
                <columns>
                   <TableColumn prefWidth="75.0" text="#" />
                   <TableColumn prefWidth="75.0" text="Borrowed Date" />
@@ -59,37 +59,37 @@
             </TableView>
          </children>
       </Pane>
-      <TextField layoutX="76.0" layoutY="93.0" prefHeight="34.0" prefWidth="939.0" promptText="Searching borrowed book.." styleClass="my-text-input-search" stylesheets="@../css/style.css" />
+      <TextField fx:id="searchText" layoutX="76.0" layoutY="93.0" prefHeight="34.0" prefWidth="939.0" promptText="Searching borrowed book.." styleClass="my-text-input-search" stylesheets="@../css/style.css" />
       <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="77.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../icons/search.png" />
          </image>
       </ImageView>
-      <Button layoutX="1238.0" layoutY="96.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="110.0" styleClass="my-add-button" stylesheets="@../css/style.css" text="Search" textFill="WHITE">
+      <Button fx:id="searchBtn" layoutX="1238.0" layoutY="96.0" mnemonicParsing="false" onAction="#SearchOnActionBtn" prefHeight="34.0" prefWidth="110.0" styleClass="my-add-button" stylesheets="@../css/style.css" text="Search" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <ComboBox layoutX="1037.0" layoutY="95.0" prefHeight="34.0" prefWidth="183.0" promptText="Select Borrowed Book" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
-      <DatePicker layoutX="73.0" layoutY="171.0" prefHeight="34.0" prefWidth="300.0" promptText="MM / DD / YYYY" styleClass="date-picker" stylesheets="@../css/style.css" />
+      <ComboBox fx:id="selectBorrowed_book" layoutX="1037.0" layoutY="95.0" prefHeight="34.0" prefWidth="183.0" promptText="Select Borrowed Book" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <DatePicker fx:id="borrowed_date" layoutX="73.0" layoutY="171.0" prefHeight="34.0" prefWidth="300.0" promptText="MM / DD / YYYY" styleClass="date-picker" stylesheets="@../css/style.css" />
       <Label layoutX="73.0" layoutY="146.0" text="Borrowed Date">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <DatePicker layoutX="393.0" layoutY="171.0" prefHeight="34.0" prefWidth="300.0" promptText="MM / DD / YYYY" styleClass="date-picker" stylesheets="@../css/style.css" />
+      <DatePicker fx:id="due_date" layoutX="393.0" layoutY="171.0" prefHeight="34.0" prefWidth="300.0" promptText="MM / DD / YYYY" styleClass="date-picker" stylesheets="@../css/style.css" />
       <Label layoutX="393.0" layoutY="146.0" text="Due Date">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <DatePicker layoutX="716.0" layoutY="171.0" prefHeight="34.0" prefWidth="300.0" promptText="MM / DD / YYYY" styleClass="date-picker" stylesheets="@../css/style.css" />
+      <DatePicker fx:id="return_date" layoutX="716.0" layoutY="171.0" prefHeight="34.0" prefWidth="300.0" promptText="MM / DD / YYYY" styleClass="date-picker" stylesheets="@../css/style.css" />
       <Label layoutX="716.0" layoutY="146.0" text="Return Date">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Button layoutX="1037.0" layoutY="171.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="314.0" styleClass="my-add-button" stylesheets="@../css/style.css" text="Return Book" textFill="WHITE">
+      <Button fx:id="returnBook_btn" layoutX="1037.0" layoutY="171.0" mnemonicParsing="false" onAction="#ReturnOnActionBtn" prefHeight="34.0" prefWidth="314.0" styleClass="my-add-button" stylesheets="@../css/style.css" text="Return Book" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
