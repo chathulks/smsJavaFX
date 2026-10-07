@@ -4,11 +4,15 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.net.URL;
@@ -99,7 +103,20 @@ public class DashBoardControler implements Initializable {
 
     @FXML
     void logoutOnActionBtn(ActionEvent event) {
+        Stage currentStage = (Stage) ((Node) event.getSource())
+                .getScene()
+                .getWindow();
 
+        // Close Dashboard
+        currentStage.close();
+        Stage stage = new Stage();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/LoginPage.fxml"))));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.show();
     }
 
     @FXML
