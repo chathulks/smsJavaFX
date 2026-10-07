@@ -25,32 +25,32 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="88.0" layoutY="124.0" prefHeight="34.0" prefWidth="300.0" promptText="M001" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <TextField fx:id="member_id" layoutX="88.0" layoutY="124.0" prefHeight="34.0" prefWidth="300.0" promptText="M001" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
       <Label layoutX="89.0" layoutY="99.0" text="Member ID">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Label>
-      <TextField layoutX="413.0" layoutY="124.0" prefHeight="34.0" prefWidth="300.0" promptText="Sadeesha Chathumal" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <TextField fx:id="full_nameText" layoutX="413.0" layoutY="124.0" prefHeight="34.0" prefWidth="300.0" promptText="Sadeesha Chathumal" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
       <Label layoutX="414.0" layoutY="99.0" text="Full Name">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Label>
-      <TextField layoutX="735.0" layoutY="124.0" prefHeight="34.0" prefWidth="300.0" promptText="chathumals05@gmail.com" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <TextField fx:id="email_text" layoutX="735.0" layoutY="124.0" prefHeight="34.0" prefWidth="300.0" promptText="chathumals05@gmail.com" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
       <Label layoutX="736.0" layoutY="99.0" text="Email">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Label>
-      <TextField layoutX="88.0" layoutY="194.0" prefHeight="34.0" prefWidth="300.0" promptText="+94 704 591 135" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <TextField fx:id="mobile_text" layoutX="88.0" layoutY="194.0" prefHeight="34.0" prefWidth="300.0" promptText="+94 704 591 135" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
       <Label layoutX="89.0" layoutY="169.0" text="Mobile">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Label>
-      <TextField layoutX="413.0" layoutY="194.0" prefHeight="34.0" prefWidth="622.0" promptText="Minikandala / Pelenda / Baduraliya 291" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <TextField fx:id="address" layoutX="413.0" layoutY="194.0" prefHeight="34.0" prefWidth="622.0" promptText="Minikandala / Pelenda / Baduraliya 291" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
       <Label layoutX="414.0" layoutY="169.0" text="Address">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Label>
-      <Button layoutX="1212.0" layoutY="194.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="122.0" styleClass="my-add-button" stylesheets="@../css/style.css" text="Add Member" textFill="WHITE">
+      <Button fx:id="add_memberBtn" layoutX="1212.0" layoutY="194.0" mnemonicParsing="false" onAction="#AddOnActionBtn" prefHeight="34.0" prefWidth="122.0" styleClass="my-add-button" stylesheets="@../css/style.css" text="Add Member" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
