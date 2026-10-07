@@ -31,26 +31,26 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <TextField layoutX="92.0" layoutY="133.0" prefHeight="34.0" prefWidth="300.0" promptText="B001" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <TextField fx:id="isbn_num" layoutX="92.0" layoutY="133.0" prefHeight="34.0" prefWidth="300.0" promptText="B001" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
       <Label layoutX="414.0" layoutY="107.0" text="Book Title">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <TextField layoutX="414.0" layoutY="133.0" prefHeight="34.0" prefWidth="300.0" promptText="Madoolduwa" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <TextField fx:id="book_title" layoutX="414.0" layoutY="133.0" prefHeight="34.0" prefWidth="300.0" promptText="Madoolduwa" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
       <Label layoutX="737.0" layoutY="107.0" text="Author">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <TextField layoutX="735.0" layoutY="133.0" prefHeight="34.0" prefWidth="300.0" promptText="Mr. Martin Wikramasingha" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
-      <ComboBox layoutX="90.0" layoutY="211.0" prefHeight="34.0" prefWidth="300.0" promptText="Select" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <TextField fx:id="author_name" layoutX="735.0" layoutY="133.0" prefHeight="34.0" prefWidth="300.0" promptText="Mr. Martin Wikramasingha" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <ComboBox fx:id="category_select" layoutX="90.0" layoutY="211.0" prefHeight="34.0" prefWidth="300.0" promptText="Select" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
       <Label layoutX="90.0" layoutY="185.0" text="Category">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <DatePicker layoutX="412.0" layoutY="211.0" prefHeight="34.0" prefWidth="300.0" promptText="MM / DD / YYYY" styleClass="date-picker" stylesheets="@../css/style.css" />
+      <DatePicker fx:id="pub_year" layoutX="412.0" layoutY="211.0" prefHeight="34.0" prefWidth="300.0" promptText="MM / DD / YYYY" styleClass="date-picker" stylesheets="@../css/style.css" />
       <Label layoutX="412.0" layoutY="185.0" text="Publish Years">
          <font>
             <Font name="System Bold" size="13.0" />
@@ -61,18 +61,18 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <TextField layoutX="734.0" layoutY="211.0" prefHeight="34.0" prefWidth="300.0" promptText="25" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
-      <Button layoutX="1207.0" layoutY="211.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="124.0" styleClass="my-add-button" stylesheets="@../css/style.css" text="Add New Book" textFill="WHITE">
+      <TextField fx:id="qty" layoutX="734.0" layoutY="211.0" prefHeight="34.0" prefWidth="300.0" promptText="25" styleClass="my-text-input-field" stylesheets="@../css/style.css" />
+      <Button fx:id="add_btn" layoutX="1207.0" layoutY="211.0" mnemonicParsing="false" onAction="#AddNewBookOnAcction" prefHeight="34.0" prefWidth="124.0" styleClass="my-add-button" stylesheets="@../css/style.css" text="Add New Book" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="1071.0" layoutY="211.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="124.0" styleClass="my-add-button" stylesheets="@../css/style.css" text="Clear" textFill="WHITE">
+      <Button fx:id="clear_btn" layoutX="1071.0" layoutY="211.0" mnemonicParsing="false" onAction="#ClearOnAction" prefHeight="34.0" prefWidth="124.0" styleClass="my-add-button" stylesheets="@../css/style.css" text="Clear" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <TableView layoutX="92.0" layoutY="340.0" prefHeight="274.0" prefWidth="1232.0" styleClass="my-table" stylesheets="@../css/style.css">
+      <TableView fx:id="book_table" layoutX="92.0" layoutY="340.0" prefHeight="274.0" prefWidth="1232.0" styleClass="my-table" stylesheets="@../css/style.css">
         <columns>
           <TableColumn prefWidth="75.0" text="ISBN Number" />
           <TableColumn prefWidth="75.0" text="Book Title" />
