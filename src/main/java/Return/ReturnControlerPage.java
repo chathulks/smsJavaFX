@@ -41,7 +41,7 @@ public class ReturnControlerPage {
     @FXML
     public void initialize(){
         selectBorrowed_book.getItems().addAll("Select Borrowed Book","Book One","Book Two","Book Three");
-        selectBorrowed_book.setValue("Select");
+        selectBorrowed_book.setValue("Select Borrowed Book");
     }
 
     public void clear(){

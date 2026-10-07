@@ -27,15 +27,26 @@ public class LoginPageControler {
 
     @FXML
     void LoginOnActionBtn(ActionEvent event) {
-        //MyAlert.alertMy("Warning","Invalid User Name Or Password.!");
-        Stage dashboardStage = new Stage();
-        try {
-            dashboardStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/Dashbpard.fxml"))));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+
+        if (usernameText.getText().isEmpty()){
+            MyAlert.alertMy("Warning","Please Enter Username","WARNING");
+        } else if (passwordText.getText().isEmpty()) {
+            MyAlert.alertMy("Warning","Please Enter Password","WARNING");
+        }else {
+            if (LoginLogic.loginValidation(usernameText.getText(),passwordText.getText())){
+                Stage dashboardStage = new Stage();
+                try {
+                    dashboardStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/Dashbpard.fxml"))));
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+                dashboardStage.initStyle(StageStyle.UNDECORATED);
+                dashboardStage.show();
+            }else {
+                MyAlert.alertMy("Warning","Try to Username: admin Password: admin123","WARNING");
+            }
         }
-        dashboardStage.initStyle(StageStyle.UNDECORATED);
-        dashboardStage.show();
+
     }
 
     public void CloseBtnText(MouseEvent mouseEvent) {
